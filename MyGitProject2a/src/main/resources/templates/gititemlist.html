@@ -5,6 +5,60 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品一覧</title>
+    <style>
+        /* スタイルを追加する場合はここに記述 */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 商品1 -->
+<div class="product">
+	<img th:src="@{/picture/aisun11.jpg}">
+    <h2>兵器1</h2>
+    <p>価格: $100</p>
+    <p>出品者: 悪徳販売業者A</p>
+</div>
+
+<!-- 商品2 -->
+<div class="product">
+	<img th:src="@{/picture/aisun6.jpg}">
+    <h2>兵器2</h2>
+    <p>価格: $150</p>
+    <p>出品者: 闇の販売業者B</p>
+</div>
+
+<!-- 商品3 -->
+<div class="product">
+    <img th:src="@{/picture/aisun7.jpg}">
+    <h2>兵器3</h2>
+    <p>価格: $120</p>
+    <p>出品者: 意外と良心的な販売業者C</p>
+</div>
+
+</body>
+</html>
 
 </body>
 </html>

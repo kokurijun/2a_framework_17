@@ -4,20 +4,22 @@ import java.util.Random;
 
 public class MergeHellController {
 	public static void main(String[] args) {
+		kadaiA();
 		kadaiB();
 		kadaiC();
+		kadaiK();
 	}
 
-	void kadaiA() {
+	static void kadaiA() {
 		for (int i = 0; i < 10; i++) {
 			System.out.println("ループ回数は" + (i + 1));
 		}
 	}
 
 	static void kadaiB() {
-		Random rand = new Random();
+		Random rnd = new Random();
 
-		int R = rand.nextInt(1, 100);
+		int R = rnd.nextInt(1, 100);
 
 		System.out.println(R + "がでました");
 	}
@@ -30,5 +32,10 @@ public class MergeHellController {
 		int c = a + b;
 
 		System.out.println(c);
+	}
+
+	static void kadaiK() {
+
+		System.out.println("暇だったから物語を作ってみる。アイスクンでしたおしまい。");
 	}
 }

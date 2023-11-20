@@ -10,7 +10,13 @@ public class MergeHellController {
 		kadaiK();
 	}
 
-	void kadaiB() {
+	static void kadaiA() {
+		for (int i = 0; i < 10; i++) {
+			System.out.println("現在" + i + "回目のループです");
+		}
+	}
+
+	static void kadaiB() {
 		Random rnd = new Random();
 
 		int R = rnd.nextInt(1, 100);
@@ -18,7 +24,7 @@ public class MergeHellController {
 		System.out.println(R + "がでました");
 	}
 
-	void kadaiC() {
+	static void kadaiC() {
 
 		int a = 50;
 		int b = 75;
@@ -28,7 +34,7 @@ public class MergeHellController {
 		System.out.println(c);
 	}
 
-	void kadaiK() {
+	static void kadaiK() {
 
 		System.out.println("暇だったから物語を作ってみる。アイスクンでしたおしまい。");
 	}
